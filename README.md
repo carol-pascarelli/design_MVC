@@ -1,38 +1,27 @@
-# Exemplo de Design de Arquitetura
+# Design de Arquitetura do Software
 
-![exemplo_arq.jpg](https://github.com/kterra/Inteli-2024-1B/blob/main/materiais/ponderada-2/exemplo-arq-v2.jpg)
 
-Link de download Draw.io: (https://drive.google.com/file/d/1hQliuMZirU0yiKzAr0d_5koE5qVwEQ2K/view?usp=sharing) 
+<div align="center">
+<img src="/assets/mvc.drawio.png" width="100%" >
+</div>
 
-# Template Readme para Arquitetura MVC em Markdown
-- Nome do Projeto: [Insira o nome do seu projeto]
-- Descrição: [Insira uma breve descrição do seu projeto]
+
+<a href="https://drive.google.com/file/d/1uVv8GAk-ReYaqwbkPWSbP9Dm5yEZhXdO/view?usp=drive_link">link do MVC completo no draw.io</a>
+
+# Especificações 
+- Nome do Projeto: Tech Bridge
+- Descrição: Este design foi desenvolvido para a visualização de um website para a Faculdade Zuyd para conectar melhor os alunos participando da simulação de negócios Cesim, com o intuito de faze-los entender melhor uns aos outros, seu costumes, frustrações e desenvolvimento no jogo.
 - Arquitetura: MVC (Model-View-Controller)
-- Ferramenta de Diagramação: [Insira a ferramenta de diagramação utilizada, ex: draw.io]
+- Ferramenta de Diagramação: draw.io
 
 ### Modelos (Models):
-- Descreva as entidades do seu projeto e seus atributos.
-- Explique as relações entre as entidades.
+&nbsp;&nbsp;&nbsp;&nbsp;Os modelos (models) é a responsável pela lógica de armazenamento e recuperação de infromações. Neste modelo há 5,cada um com seus respectivos atributos. Cada uma destas entidades são agrupamentos de dados com atributos designados apenas a ela. Por exemplo nas entidades tutor e player temos atributos como nome, país de origem, email, senha e times que está participando no jogo. Assim, é possível visualizar como o código deverá ser feito para poder estruturas este website
 
 ### Controladores (Controllers):
-- Liste os controladores do seu projeto e suas responsabilidades.
-- Descreva as ações (methods) de cada controlador e seus parâmetros de entrada e saída.
-- Explique como os controladores interagem com os modelos e views.
+&nbsp;&nbsp;&nbsp;&nbsp;Os controladores do projeto conectam a visão com o modelo, sendo o que está por trás fazendo este website funcionar. Neste mvc há 5 controladores: player, tutor, feedback, perfil e medidor de felicidade. Todos os controladores devem ser visualizados, por isso há este parâmetro de entrada e saída (das informações inseridas), para que todos os usuários possam consultar na plataforma. Há também parâmetros como gravar a informação de entrada, buscar, e calcular, no caso do medidor de felicidade. Dessa forma, há a entrada da informação inserida pelo usuário, que é gravada e assim poderá ser visualizada no seu perfil.
 
 ### Views (Views):
-- Liste as views do seu projeto e sua função.
+&nbsp;&nbsp;&nbsp;&nbsp; O projeto é contituído por 5 views. Nesta parte está tudo que vai poder ser visualizado pelo usuário, então há uma página de login na qual ele irá preencher com seu email e senha, um questionário para saber mais sobre o seu perfil e personalidade, feedbacks que ele poderá dar para os outros membros de seu grupo, medidor de felicidade no qual ele poderá dizer como está se sentindo e ficará disponível para visualização do resto do grupo também e perfil e avatar no qual ele poderá escolher quais informações estarão em display para os outros membros de sua equipe assim como um avatar editável por ele. 
 
 ### Infraestrutura:
-
-- Descreva os componentes de infraestrutura do seu projeto, como bancos de dados, APIs externas e outras dependências.
-- Explique como a infraestrutura se integra à arquitetura MVC.
-
-
-### Justifique as escolhas feitas e como elas impactam o projeto.
-#### Implicações da Arquitetura:
-Descreva as implicações da arquitetura em termos de escalabilidade, manutenção, testabilidade e outros aspectos importantes.
-
-### Recursos Adicionais:
-- Documentação do Sails.js: https://github.com/balderdashy/sails
-- Tutorial do draw.io: https://m.youtube.com/watch?v=w3zm-wbmlpc
-- Exemplos de diagramas MVC: https://www.lucidchart.com/pages/templates
+&nbsp;&nbsp;&nbsp;&nbsp; O projeto irá contar com um banco de dados para poder armazenar e gerenciar todos os dados do website. Além disso, nos controles serão usados Interfaces de programação (APIs) para processar tudo que está sendo inserido.
